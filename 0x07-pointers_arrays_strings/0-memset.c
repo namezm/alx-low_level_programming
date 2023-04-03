@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- *_memst: fills memory with a constant byte,
+ *_memset: fills memory with a constant byte,
  *@s: memory area
  *@b: constant byte
  *@n: bytes filled
  * Return: Returns a pointer to the memory area s.
  */
-char *_memst(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
