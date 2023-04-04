@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *print_chessboard - chessborad with C
- *@a: pointer
+ *@a: pointer a
  *Return: nothing
  */
 void print_chessboard(char (*a)[8])
