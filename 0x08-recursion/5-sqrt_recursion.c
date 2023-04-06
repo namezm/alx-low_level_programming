@@ -3,7 +3,7 @@
  *_sqrt_recursion - calculate natural of a number
  *@n: int
  *Retur: natural square number
- */ 
+ */
 int _sqrt_recursion(int n)
 {
 	if (n == 0)
@@ -18,7 +18,7 @@ int _sqrt_recursion(int n)
  *@x: int
  *@y: int
  *Return: the natural square
- */ 
+ */
 int get_sqrt(int x, int y)
 {
 	if (x * x == y)
