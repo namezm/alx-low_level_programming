@@ -4,7 +4,7 @@
  *@n: int
  *@i: int
  *Return: is prime or not
- */ 
+ */
 int is_prime_help(int n, int i)
 {
 	if (i == 1)
@@ -16,7 +16,7 @@ int is_prime_help(int n, int i)
 		if (n % i == 0)
 			return (0);
 		else
-			return is_prime_help(n, i - 1);
+			return (is_prime_help(n, i - 1));
 	}
 }
 /**
@@ -29,5 +29,5 @@ int is_prime_number(int n)
 	if (n <= 1)
 		return (0);
 	else
-		return is_prime_help(n, n - 1);
+		return (is_prime_help(n, n - 1));
 }
