@@ -2,7 +2,7 @@
 /**
  *_sqrt_recursion - calculate natural of a number
  *@n: int
- *Retur: natural square number
+ *Return: natural square number
  */
 int _sqrt_recursion(int n)
 {
