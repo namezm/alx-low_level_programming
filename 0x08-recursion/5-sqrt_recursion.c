@@ -26,5 +26,5 @@ int get_sqrt(int x, int y)
 	else if (x * x > y)
 		return (-1);
 	else
-		return (tester(x + 1, y));
+		return (get_sqrt(x + 1, y));
 }
