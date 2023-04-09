@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  *main - multiplication 2 numbers
  *@argc: count
