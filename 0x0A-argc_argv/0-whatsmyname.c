@@ -1,13 +1,12 @@
 #include<stdio.h>
 /**
- *printmyname
+ *main - printmyname
  *@argc: count
  *@argv: value
  *Return: nothing
  */
 int main(int argc, char *argv[])
 {
-	printf('%d', argv[0]);
-
+	printf('%s', argv[0]);
 	return (0);
 }
