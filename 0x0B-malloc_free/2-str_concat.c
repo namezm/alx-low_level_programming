@@ -11,15 +11,13 @@ char *str_concat(char *s1, char *s2)
 {
 	
 	unsigned int  len2 = strlen(s2);
-	unsigned int  len1 = strlen(s1);
-	
+	unsigned int  len1 = strlen(s1);	
+	char *result;
+
 	if (!s1)
 		s1 = "";
 	if (!s2)
 		s2 = "";
-
-	char *result;
-
 	result = (char *) malloc(len1 + len2 + 1);
 	if (!result)
 		return (NULL);
