@@ -29,9 +29,7 @@ char *_strcpy(char *new_str, char *str)
 char *_strdup(char *str)
 {
 	char *new_str;
-	unsigned int i, lenght;
 
-	i = 0;
 	lenght = 0;
 	if (str == NULL)
 		return (NULL);
