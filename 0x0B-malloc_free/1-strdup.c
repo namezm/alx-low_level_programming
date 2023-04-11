@@ -8,16 +8,16 @@
  */
 char *_strcpy(char *new_str, char *str)
 {
-        int i = 0;
+	int i = 0;
 
-        while (str[i] != '\0')
-        {
-                new_str[i] = str[i];
-                i++;
-        }
-        new_str[i] = '\0';
+	while (str[i] != '\0')
+	{
+		new_str[i] = str[i];
+		i++;
+	}
+	new_str[i] = '\0';
 
-        return (new_str);
+	return (new_str);
 }
 
 
@@ -30,7 +30,9 @@ char *_strdup(char *str)
 {
 	char *new_str;
 	unsigned int lenght;
+
 	lenght = 0;
+
 	if (str == NULL)
 		return (NULL);
 
