@@ -9,9 +9,8 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	
 	unsigned int  len2 = strlen(s2);
-	unsigned int  len1 = strlen(s1);	
+	unsigned int  len1 = strlen(s1);
 	char *result;
 
 	if (!s1)
