@@ -1,6 +1,26 @@
 #include "main.h"
-#include <string.h>
 #include <stdlib.h>
+/**
+ *_strcpy - concat str to str2
+ *@new_str: char
+ *@str: char
+ *Return: str final
+ */
+char *_strcpy(char *new_str, char *str)
+{
+        int i = 0;
+
+        while (str[i] != '\0')
+        {
+                new_str[i] = str[i];
+                i++;
+        }
+        new_str[i] = '\0';
+
+        return (new_str);
+}
+
+
 /**
  *_strdup - allocated space in memory
  *@str: char
@@ -24,24 +44,5 @@ char *_strdup(char *str)
 		return (NULL);
 
 	_strcpy(new_str, str);
-	return (new_str);
-}
-/**
- *_strcpy - concat str to str2
- *@new_str: char
- *@str: char
- *Return: str final
- */
-char *_strcpy(char *new_str, char *str)
-{
-	int i = 0;
-
-	while (str[i] != '\0')
-	{
-		new_str[i] = str[i];
-		i++;
-	}
-	new_str[i] = '\0';
-
 	return (new_str);
 }
