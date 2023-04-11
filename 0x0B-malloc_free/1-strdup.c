@@ -9,14 +9,37 @@
 char *_strdup(char *str)
 {
 	char *new_str;
+	unsigned int i = 0, lenght = 0;
 
 	if (str == NULL)
 		return (NULL);
 
-	new_str = (char *) malloc(strlen(str) + 1);
+	while (str[lenght])
+		lenght = lenght + 1;
+
+	new_str = (char *) malloc(lenght + 1);
 	if (new_str == NULL)
 		return (NULL);
 
-	strcpy(new_str, str);
+	_strcpy(new_str, str);
+	return (new_str);
+}
+/**
+ *_strcpy - concat str to str2
+ *@new_str: char
+ *@str: char
+ *Return: str final
+ */
+char *_strcpy(char *new_str, char *str)
+{
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		new_str[i] = str[i];
+		i++;
+	}
+	new_str[i] = '\0';
+
 	return (new_str);
 }
