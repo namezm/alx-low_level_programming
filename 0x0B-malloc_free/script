@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Find the last modified file in the current directory
+last_file=$(ls -t | head -1)
+
+# Make the file executable
+chmod +x "$last_file"
+
+# Add the file to the Git repository
+git add "$last_file"
+
+# Commit the changes with a descriptive message
+git commit -m "Modified $last_file"
+
+# Push the changes to the remote repository
+git push
