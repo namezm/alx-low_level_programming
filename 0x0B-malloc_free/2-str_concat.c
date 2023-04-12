@@ -9,19 +9,35 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int  len2 = strlen(s2);
-	unsigned int  len1 = strlen(s1);
+	unsigned int  len2 = 0, i = 0;
+	unsigned int  len1 = 0, j = 0;
 	char *result;
 
-	if (!s1)
-		s1 = "";
-	if (!s2)
-		s2 = "";
+	while (s1 && s1[len1])
+		len1++;
+
+	while (s2 && s2[len2])
+		len2++;
 	result = (char *) malloc(len1 + len2 + 1);
 	if (!result)
 		return (NULL);
-	memcpy(result, s1, len1);
-	memcpy(result + len1, s2, len2 + 1);
-
+	if (s1)
+	{
+		while (i < len1)
+		{
+			result[i] = s1[j];
+			i++;
+		}
+	}
+	if (s2)
+	{
+		while (i < (len1 + len2))
+		{
+			result[i] = s2[j];
+			i++;
+			j++;
+		}
+	}
+	result[i] = '\0';
 	return (result);
 }
