@@ -2,11 +2,11 @@
 #define _DOG_H_
 
 /**
- *Struct dog - information of a dog
+ *struct dog - information of a dog
  *@name: dog's name
  *@age: dog's age
  *@owner: dog's owner
- *description: struct dog save some information like name, age and owner
+ *Description: struct dog save some information like name, age and owner.
  */
 
 struct dog
