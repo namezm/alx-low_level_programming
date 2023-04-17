@@ -6,6 +6,7 @@
  *@name: dog's name
  *@age: dog's age
  *@owner: dog's owner
+ *description: struct dog save some information like name, age and owner
  */
 
 struct dog
