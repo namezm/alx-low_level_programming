@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 /**
- *stract op - operator struct
+ *struct op - operator struct
  *@op: operator
  *@f: function
  *Description: operation system
