@@ -6,9 +6,9 @@
 
 /**
  *stract op - operator struct
- *Description: operation system
  *@op: operator
  *@f: function
+ *Description: operation system
  */
 typedef struct op
 {
