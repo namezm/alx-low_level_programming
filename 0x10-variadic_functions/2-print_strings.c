@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 /**
  *print_strings - orint strings
- *@seperator: string seperator
+ *@separator: string seperator
  *@n: number of string
  *Return: nothing
  *
