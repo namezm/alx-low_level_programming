@@ -3,7 +3,6 @@
  *print_all - prints anything
  *@format: list of types of arguments passed
  *Return: nothing
- *
  */
 void print_all(const char * const format, ...)
 {
@@ -22,27 +21,21 @@ void print_all(const char * const format, ...)
 			{
 				printf(", ");
 				break;
-			}
-			j++;
+			} j++;
 		}
-
 		switch (format[i])
 		{
 		case 'c':
-			printf("%c", va_arg(valist, int));
-			c = 1;
-			break;
+			printf("%c", va_arg(valist, int)), c = 1;
+			       	break;
 		case 'i':
-			printf("%d", va_arg(valist, int));
-			c = 1;
-			break;
+			printf("%d", va_arg(valist, int)), c = 1;
+		       	break;
 		case 'f':
-			printf("%f", va_arg(valist, double));
-			c = 1;
+			printf("%f", va_arg(valist, double)), c = 1;
 			break;
 		case 's':
-			s = va_arg(valist, char *);
-			c = 1;
+			s = va_arg(valist, char *), c = 1;
 			if (!s)
 			{
 				printf("(nil)");
@@ -50,8 +43,7 @@ void print_all(const char * const format, ...)
 			}
 			printf("%s", s);
 			break;
-		}
-		i++;
+		} i++;
 	}
 	printf("\n");
 	va_end(valist);
