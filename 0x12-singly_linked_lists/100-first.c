@@ -20,6 +20,5 @@ int main(void)
 {
 	pre_main_function();
 
-	return (0);
 }
 
