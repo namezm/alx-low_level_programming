@@ -9,7 +9,7 @@ void _putchar(char);
 /**
  * struct list_s - Singly linked lists
  * @str: string
- * @len: cp 
+ * @len: cp
  * @next: points to node
  *
  * Description: Singly linked lists
