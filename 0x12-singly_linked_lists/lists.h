@@ -5,7 +5,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-void _putchar(char);
 /**
  * struct list_s - Singly linked lists
  * @str: string
