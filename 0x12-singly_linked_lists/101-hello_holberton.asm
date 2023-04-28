@@ -1,4 +1,3 @@
-
 section .data
     message db "Hello, Holberton!", 0
     format db "%s\n", 0
