@@ -1,24 +1,12 @@
 #include <stdio.h>
-
+void __attribute__((constructor)) namezme(void);
 /**
- *pre_main_function - string before the main
- *
- *Return: void
+ * namezme - verification
+ * by namezm
+ * Return: nothing
  */
-void pre_main_function(void)
+void namezme(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
 }
-
-/**
- * main - The main function
- *
- * Return: 0
- */
-int main(void)
-{
-	pre_main_function();
-
-}
-
