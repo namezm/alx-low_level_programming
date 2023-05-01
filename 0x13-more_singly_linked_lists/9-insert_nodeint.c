@@ -1,34 +1,34 @@
-#include "lists.h"
 #include <stdlib.h>
+#include "lists.h"
 /**
- * insert_nodeint_at_index - new node at a given position
+ * insert_nodeint_at_index - verification
  * @h: liste
- * @index: tag ind
+ * @index: targ i
  * @n: i
- * Return: liste
+ * Return: list
  */
 listint_t *insert_nodeint_at_index(listint_t **h, unsigned int index, int n)
 {
-	listint_t *liste, *prev_liste = NULL, *list = *h;
+	listint_t *n_node, *p_node = NULL, *nd = *h;
 
 	do {
-		if (!list && index > 0)
+		if (nd == NULL && index > 0)
 			return (NULL);
 		if (index == 0)
 		{
-			liste = malloc(sizeof(listint_t));
-			if (liste == NULL)
+			n_node = malloc(sizeof(listint_t));
+			if (n_node == NULL)
 				return (NULL);
-			liste->n = n;
-			liste->next = list;
-			if (!prev_liste)
-				prev_liste->next = liste;
+			n_node->n = n;
+			n_node->next = nd;
+			if (p_node != NULL)
+				p_node->next = n_node;
 			else
-				*h = liste;
-			return (liste);
+				*h = n_node;
+			return (n_node);
 		}
-		prev_liste = prev_liste == NULL ? list : prev_liste->next;
-		list = list->next;
+		p_node = p_node == NULL ? nd : p_node->next;
+		nd = nd->next;
 		index--;
 	} while (1);
 }
