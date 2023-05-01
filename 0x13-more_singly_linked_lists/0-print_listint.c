@@ -3,7 +3,7 @@
 /**
  * print_listint - prints all the elements of a listint_t
  * @h: listheader
- * Return: liste
+ * Return: the number of node
  */
 size_t print_listint(const listint_t *h)
 {
