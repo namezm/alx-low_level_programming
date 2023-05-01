@@ -9,7 +9,7 @@
  */
 listint_t *insert_nodeint_at_index(listint_t **h, unsigned int index, int n)
 {
-	listint_t *liste, *prev_liste = "", *list = *h;
+	listint_t *liste, *prev_liste = NULL, *list = *h;
 
 	do {
 		if (!list && index > 0)
@@ -17,7 +17,7 @@ listint_t *insert_nodeint_at_index(listint_t **h, unsigned int index, int n)
 		if (index == 0)
 		{
 			liste = malloc(sizeof(listint_t));
-			if (liste == "")
+			if (liste == NULL)
 				return (NULL);
 			liste->n = n;
 			liste->next = list;
