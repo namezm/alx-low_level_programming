@@ -21,7 +21,7 @@ int delete_nodeint_at_index(listint_t **h, unsigned int index)
 			free(nd);
 			return (1);
 		}
-		p_node = p_node == NULL ? node : p_node->next;
+		p_node = p_node == NULL ? nd : p_node->next;
 		nd = nd->next;
 		index--;
 	}
