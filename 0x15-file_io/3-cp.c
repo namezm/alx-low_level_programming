@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * main - check the file
+ * sed_file - check the file
  * @of: file
  * Return: -
  */
@@ -54,7 +54,7 @@ int main(int argc, char **argv)
 			exit(99);
 		}
 		rf = read(input, text, 1024);
-		output = open(av[2], O_WRONLY | O_APPEND);
+		output = open(argv[2], O_WRONLY | O_APPEND);
 	} while (rf > 0);
 	free(text);
 	sed_file(input);
