@@ -12,7 +12,7 @@ ssize_t read_textfile(const char *filename, size_t n)
 	ssize_t opf, ref, wrf;
 	char *outp;
 
-	if (n == 0 || filename == NULL )
+	if (n == 0 || filename == NULL)
 		return (0);
 	outp = malloc(n);
 	if (outp == NULL)
@@ -20,7 +20,7 @@ ssize_t read_textfile(const char *filename, size_t n)
 	opf = open(filename, O_RDONLY);
 	ref = read(opf, outp, n);
 	wrf = write(STDOUT_FILENO, outp, ref);
-	if (opf < 0 || ref != wrf || wrf < 0  || ref < 0 )
+	if (opf < 0 || ref != wrf || wrf < 0  || ref < 0)
 	{
 		free(outp);
 		return (0);
@@ -28,4 +28,4 @@ ssize_t read_textfile(const char *filename, size_t n)
 	free(outp);
 	close(opf);
 	return (wrf);
-}
+v}
