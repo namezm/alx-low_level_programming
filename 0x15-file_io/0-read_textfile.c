@@ -9,7 +9,7 @@
  */
 ssize_t read_textfile(const char *filename, size_t n)
 {
-	ssize_t opf, ref, wrf;
+	size_t opf, ref, wrf;
 	char *outp;
 
 	if (n == 0 || filename == NULL)
@@ -28,4 +28,4 @@ ssize_t read_textfile(const char *filename, size_t n)
 	free(outp);
 	close(opf);
 	return (wrf);
-v}
+}
